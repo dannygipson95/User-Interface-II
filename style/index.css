@@ -1,1 +1,219 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: georgia;
+}
+/* Style for header*/
+header {
+    background: #0c7b93;
+    background: linear-gradient(to right, #0c7b93, #142850);
+    border: 3px solid ivory;
+    border-style: hidden hidden inset hidden;
+
+}
+
+h1 {
+    font-size: 50px;
+    padding: 15px;
+    color: ivory;
+}
+
+nav {
+    display: flex;
+    padding-left: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: ivory;
+    font-size: 20px;
+    border: solid #00a8cc 3px;
+    border-style: groove;
+    padding: 10px;
+    border-radius: 20%;
+    margin: 10px;
+}
+
+.headerLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icons {
+    width: 35px;
+}
+
+.iconBox {
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    border: none;
+    margin-right: 15px;
+
+
+}
+
+/*style for body header*/
+
+
+h2 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 30px;
+    color: ivory;
+}
+
+button {
+    width: 100%;
+    height: 20px;
+}
+
+.bodyButton {
+    font-size: 25px;
+    border: none;
+    color: #0c7b93;
+}
+
+.topButton {
+    width: 40%;
+    text-align: center;
+}
+
+.projectsButton {
+    height: 30px;
+    border-radius: 60%;
+
+}
+
+p {
+    margin-top: 15px;
+    width: 60%;
+    line-height: 1.5;
+    text-align: center;
+    color: ivory;
+}
+
+.mainHead {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-content: center;
+    background: #00a8cc;
+}
+
+.intro {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*style for main body*/
+
+.mainBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #00a8cc;
+    padding-bottom: 20px
+}
+
+img {
+    margin: 10px;
+}
+
+figcaption {
+    text-align: center;
+    color: ivory;
+}
+
+.navButton:hover {
+    background: #0f4c75;
+    color: #bbe1fa;
+}
+
+/* style for footer */
+
+footer {
+    height: 15%;
+    background: #0c7b93;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+h5 {
+    width: 40%;
+    color: ivory;
+    text-align: center;
+    font-size: 30px;
+    margin:10px;
+}
+
+.bottomButton {
+    width: 40%;
+    margin: 10px;
+
+}
+
+.contactButton {
+    height: 30px;
+    border-radius: 60%;
+}
