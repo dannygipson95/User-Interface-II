@@ -52,6 +52,10 @@ table {
     box-sizing: border-box;
     font-family: georgia;
 }
+
+html{
+    font-size: 62.5%;
+}
 /* Style for header*/
 header {
     background: #0c7b93;
@@ -62,56 +66,65 @@ header {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 5rem;
     padding: 15px;
     color: ivory;
 }
 
 nav {
+    border: 1px solid red;
     display: flex;
-    padding-left: 30px;
+    justify-content: space-between;
+    width: 50%;
 }
 
-a {
+.navButton {
+    font-size: 3rem;
     text-decoration: none;
     color: ivory;
-    font-size: 20px;
-    border: solid #00a8cc 3px;
-    border-style: groove;
-    padding: 10px;
-    border-radius: 20%;
-    margin: 10px;
+    font-size: 2rem;
+    padding: 5%;
+    margin: .5%;
+    width: 18%;
 }
 
 .headerLinks {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .social {
     display: flex;
     justify-content: flex-end;
-}
-
-.icons {
-    width: 35px;
+    border: 1px dotted red;
+    width: 50%;
+    height: 60%;
 }
 
 .iconBox {
-    padding: 0px;
-    margin: 0px;
-    border-radius: 0px;
-    border: none;
-    margin-right: 15px;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    border: 1px solid red;
+    margin-right: 0;
+    width: 20%;
+    height: 60%;
+    
 
 
+}
+
+.icons {
+    width: 80%;
+    border: 1px solid red;
 }
 
 /*style for body header*/
 
 
 h2 {
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: bold;
     text-align: center;
     margin: 10px;
@@ -125,7 +138,8 @@ button {
 }
 
 .bodyButton {
-    font-size: 25px;
+    text-decoration: none;
+    font-size: 1.8rem;
     border: none;
     color: #0c7b93;
 }
@@ -136,6 +150,7 @@ button {
 }
 
 .projectsButton {
+    text-decoration: none;
     height: 30px;
     border-radius: 60%;
 
@@ -145,6 +160,7 @@ p {
     margin-top: 15px;
     width: 60%;
     line-height: 1.5;
+    font-size: 1.4rem;
     text-align: center;
     color: ivory;
 }
@@ -163,6 +179,10 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.headPic {
+    margin-left: 10%
 }
 /*style for main body*/
 
@@ -203,7 +223,7 @@ h5 {
     width: 40%;
     color: ivory;
     text-align: center;
-    font-size: 30px;
+    font-size: 3rem;
     margin:10px;
 }
 
@@ -216,4 +236,48 @@ h5 {
 .contactButton {
     height: 30px;
     border-radius: 60%;
+}
+
+/* Media queries */
+@media(max-width: 800px){
+    .icons{
+        height: 100%;
+        margin: -5px;
+    }
+    
+    .bodyButton{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 500px){
+    nav {
+        flex-direction: column;
+    }
+    .social{
+        height: 100%;
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .mainHead {
+        flex-direction: column;
+        align-items:center;
+        border: 1px solid red;
+    }
+
+    .headPic {
+        margin-left: 0;
+    }
+
+    .intro {
+        border: 1px solid red;
+        width: 90%;
+    }
+
+    .projectsButton {
+        font-size: 1.5rem;
+    }
 }
